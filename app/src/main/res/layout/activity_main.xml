@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:background="@color/gray"
+            android:padding="20dp"
+            tools:ignore="contentDescription,SpUsage, LabelFor, AutoFill">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/outlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dec 2020"
+                    app:iconGravity="end"
+                    android:enabled="false"
+                    app:icon="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:backgroundTint="@color/white"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_marginBottom="10dp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/salesCard"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:checkable="true"
+                    android:background="@color/white"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Sales"
+                            android:textSize="16dp"
+                            android:textColor="@color/purple_700"/>
+
+                        <TextView
+                            android:id="@+id/sumSales"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="KES00.00"
+                            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+                            android:drawableTint="@color/purple_700"/>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/dexpCard"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:checkable="true"
+                    android:background="@color/white"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Direct expenses"
+                            android:textSize="16dp"
+                            android:textColor="@color/purple_700"/>
+
+                        <TextView
+                            android:id="@+id/sumDirect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="KES00.00"
+                            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+                            android:drawableTint="@color/purple_700"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/indexpCard"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:checkable="true"
+                    android:background="@color/white"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Indirect expenses"
+                            android:textSize="16dp"
+                            android:textColor="@color/purple_700"/>
+
+                        <TextView
+                            android:id="@+id/sumIndirect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="KES00.00"
+                            android:drawableEnd="@drawable/ic_baseline_chevron_right_24"
+                            android:drawableTint="@color/purple_700"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bottom">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profit / (Loss)"
+                        android:textSize="16dp"
+                        android:textColor="@color/purple_700"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sales"/>
+                        <TextView
+                            android:id="@+id/totalSales"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="KES00.00"
+                            android:textAlignment="viewEnd"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" - "/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom_light">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Direct expenses"/>
+                        <TextView
+                            android:id="@+id/totalDirects"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="(KES00.00)"
+                            android:textAlignment="viewEnd"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Gross profits"/>
+                        <TextView
+                            android:id="@+id/grossProfits"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="KES00.00"
+                            android:textAlignment="viewEnd"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=" - "/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom_light">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Indirect expenses"/>
+                        <TextView
+                            android:id="@+id/totalIndirects"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="(KES00.00)"
+                            android:textAlignment="viewEnd"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Net profit"/>
+                        <TextView
+                            android:id="@+id/netProfit"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="KES00.00"
+                            android:textAlignment="viewEnd"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </TableLayout>
+        </ScrollView>
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/add"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintRight_toRightOf="parent"-->
+<!--            android:layout_margin="20dp"-->
+<!--            app:fabSize="normal"-->
+<!--            android:src="@drawable/ic_baseline_add_24"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

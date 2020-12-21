@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">mwanabiashara</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="biasharalite">BiasharaLite</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="first_time_login">Kindly make note of your PIN as it cannot be recovered if forgotten.</string>
+    <string name="proceed">Proceed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Description</string>
+    <string name="cost">Enter cost</string>
+    <string name="quantity">Quantity</string>
+    <string name="comments">Additional comments</string>
+</resources>

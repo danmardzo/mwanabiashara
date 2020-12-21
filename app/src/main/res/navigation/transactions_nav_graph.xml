@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/transactions_nav_graph"
+    app:startDestination="@id/transactionListFragment">
+
+    <fragment
+        android:id="@+id/transactionListFragment"
+        android:name="com.msc.mobileapps.mwanabiashara.ui.TransactionListFragment"
+        android:label="TransactionListFragment" >
+        <action
+            android:id="@+id/action_transactionListFragment_to_newTransactionFragment"
+            app:destination="@id/newTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newTransactionFragment"
+        android:name="com.msc.mobileapps.mwanabiashara.ui.NewTransactionFragment"
+        android:label="fragment_new_transaction"
+        tools:layout="@layout/fragment_new_transaction" />
+</navigation>

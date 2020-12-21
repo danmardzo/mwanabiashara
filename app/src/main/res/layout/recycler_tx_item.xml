@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_bottom_light"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingStart="20dp"
+    tools:ignore="SpUsage">
+
+    <TextView
+        android:id="@+id/itemDate"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="2020-DEC-01 15:45:00"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="Milk"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/itemQty"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:text="Quantity: 12 liters"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/itemCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingBottom="5dp"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textColor="@color/purple_700"
+        android:text="KES 230.00"
+        android:textSize="14dp" />
+
+</LinearLayout>
